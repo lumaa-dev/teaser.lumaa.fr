@@ -1,0 +1,31 @@
+<template>
+  <div>
+    <p>Coming soon.<br />A-Sync Corporation.</p>
+  </div>
+</template>
+
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+div:not(div#app) {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  text-align: center;
+}
+</style>
