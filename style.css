@@ -34,7 +34,7 @@ p {
   font-size: 2em;
   text-align: center;
 
-  /* Fallback */
+  /* Fallback Font */
   font-family: "Arial", sans-serif;
 }
 
