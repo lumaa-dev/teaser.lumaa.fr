@@ -10,6 +10,9 @@
 
     # Règle pour le chemin /hint
     RewriteRule ^hint$ /hint.html [L]
+
+    # Règle pour le chemin /last
+    RewriteRule ^last$ /last.html [L]
     
     # Règle générale pour les autres chemins (page 404)
     RewriteCond %{REQUEST_FILENAME} !-f

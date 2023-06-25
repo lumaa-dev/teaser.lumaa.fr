@@ -50,7 +50,11 @@ p.w {
   font-family: "Veteran", 'Courier New', Courier, monospace;
 }
 
-img {
+img[data-long] {
   width: 80vw;
+}
+
+img[data-high] {
+  height: 80vh;
 }
   
