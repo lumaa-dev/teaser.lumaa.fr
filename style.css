@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "Monocraft";
+  src: url("https://github.com/IdreesInc/Monocraft/releases/download/v3.0/Monocraft.ttf");
+}
+
+@font-face {
   font-family: "Veteran";
   src: url("./assets/veteran.ttf");
 }
@@ -49,6 +54,10 @@ p.s {
 
 p.w {
   font-family: "Veteran", 'Courier New', Courier, monospace;
+}
+
+.minecraft {
+  font-family: "Monocraft", monospace;
 }
 
 img[data-long] {

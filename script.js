@@ -1,5 +1,5 @@
-function countdown() {
-    var countDownDate = new Date("Jul 21, 2023 21:30:00").getTime(); // next event day (will get changed later)
+function countdown(querySelector = "p") {
+    var countDownDate = new Date("Jul 11, 2023 15:30:00").getTime();
 
     var x = setInterval(function() {
 
@@ -12,12 +12,26 @@ function countdown() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.querySelector("p#x").innerText = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s";
+    let dString = days > 0 ? `${zeroify(days)}d` : ""
+    let hString = hours > 0 ? `${zeroify(hours)}h` : ""
+    // let mString = minutes > 0 ? `${minutes}m` : ""
+    // let sString = seconds > 0 ? `${seconds}s` : ""
+
+    document.querySelector(querySelector).innerText = `${dString} ${hString} ${zeroify(minutes)}m ${zeroify(seconds)}s`
 
     if (distance < 0) {
         clearInterval(x);
-        document.querySelector("p#x").innerText = "0d 0h 0m 0s";
+        document.querySelector(querySelector).innerText = "https://youtu.be/TdGhZpvR7CY";
     }
     }, 1000);
 }
+
+function zeroify(int = 1) {
+    if (int < 10) {
+        return `0${int}`
+    } else {
+        return `${int}`
+    }
+}
+
+countdown("p#counter");
