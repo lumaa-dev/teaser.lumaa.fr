@@ -1,8 +1,8 @@
-function countdown(querySelector = "p", countdown = new Date("July 21st, 2023 21:30:00"), endString = "") {
+function countdown(querySelector = "p", countdown = new Date("July 21, 2024 21:30:00"), endString = "") {
     var x = setInterval(function() {
         var now = new Date().getTime();
 
-        var distance = countdown - now;
+        var distance = countdown.getTime() - now;
 
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -31,4 +31,4 @@ function zeroify(int = 1) {
     }
 }
 
-countdown(".counter", new Date("Jul 21st, 2023 21:30:00"), "Started.")
+countdown(".counter", new Date("Nov 1, 2023 21:30:00"), "twitch.tv/lumaa_dev")
