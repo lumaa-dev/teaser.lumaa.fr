@@ -17,17 +17,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden !important;
-  pointer-events: none !important;
-  user-select: none !important;
+  overflow-x: hidden !important;
+  cursor: default;
+  /* pointer-events: none !important;
+  user-select: none !important; */
 }
 
 body {
   background: #000;
-  color: #fff;
+  color: #f1f1f1;
 }
   
-div {
+.center {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -36,28 +37,57 @@ div {
   align-items: center;
 }
 
-p {
-  font-size: 2em;
+.post .center {
+  height: inherit;
+  width: auto;
+}
+
+.post {
+  padding: 3vh;
+}
+
+.post > * {
+  margin: 2.5vh 0;
+}
+
+.post h1, .post .sub {
   text-align: center;
+}
+
+.post .sub {
+  font-size: 1.65em;
+}
+
+.post p.body {
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+p, h1 {
+  font-size: 2em;
 
   /* Fallback Font */
   font-family: "Arial", sans-serif;
 }
 
-p.a {
+.a {
   font-family: 'Courier New', Courier, monospace;
 }
 
-p.s {
+.s {
   font-family: "Pencil", system-ui, -apple-system, sans-serif
 }
 
-p.w {
+.w {
   font-family: "Veteran", 'Courier New', Courier, monospace;
 }
 
 .minecraft {
   font-family: "Monocraft", monospace;
+}
+
+.omo {
+  font-family: "Omori", "Courier New", Courier, serif;
 }
 
 img[data-long] {
